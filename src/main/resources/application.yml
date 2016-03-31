@@ -1,0 +1,23 @@
+---
+server:
+  port: 8086
+  
+
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/mydb
+    username: foo
+    password: bar
+    driverClassName: org.postgresql.Driver
+
+     
+#spring:
+#  data:
+#    mongodb:
+#      uri: mongodb://admin:password@ds011459.mlab.com:11459/employeeacn

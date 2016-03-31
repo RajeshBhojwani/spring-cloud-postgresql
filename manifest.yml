@@ -1,0 +1,9 @@
+---
+applications:
+  - name: springdatamongodb
+    buildpack: java_buildpack
+    path: target/spring-cloud-mongodb-1.0.0.BUILD-SNAPSHOT.jar
+services:
+    - configserver
+    - discovery
+    - mongodb
